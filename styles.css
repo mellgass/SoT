@@ -1,0 +1,32 @@
+section#test {
+  background: url('https://images5.alphacoders.com/117/thumb-1920-1178361.jpg') center center/cover no-repeat;
+}
+
+section#test .masked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0
+}
+
+section#test .masked img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0
+}
+
+section#test .masked picture:nth-child(2) img {
+  -webkit-mask-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0, #000 50%);
+  mask-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0, #000 50%);
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 200% auto;
+  mask-size: 200% auto
+}
